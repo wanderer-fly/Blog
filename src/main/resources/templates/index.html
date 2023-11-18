@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/static/css/default.css">
+        <link rel="stylesheet" href="/static/css/index.css">
+        <link rel="stylesheet" href="/static/css/header.css">
+        <title>小圆帽の墓誌銘</title>
+    </head>
+    <body>
+        <div id="logo">
+            <img id="logoImg" src="/static/res/image/Wanderer.jpg" alt="蹦蹦小圓帽">
+        </div>
+        <header id="header">
+            <a href="#" th:text="${HOME}"></a>
+            <a href="#" th:text="Archive"></a>
+
+            <!-- 語言欄 -->
+            <div class="lang">
+                <img th:src="@{/static/res/image/flags/__${lang}__.jpg}">
+            </div>
+            <script src="/static/js/header.js"></script>
+        </header>
+        <h1>Language: <span th:text="${lang}"></span></h1>
+    </body>
+</html>

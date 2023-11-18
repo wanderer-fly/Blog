@@ -1,0 +1,67 @@
+header {
+    /* display: flex;
+    flex-direction: row;
+    justify-content: flex-start; */
+    background-color: rgba(74, 74, 74, 0.608);
+    backdrop-filter: blur(10px);
+    color: rgb(255, 255, 255);
+    border-radius: 30px;
+    height: 40px;
+    padding: 10px;
+    margin: 20px 20px 10px 20px;
+    box-sizing: border-box;
+    text-align: center;
+    transition: all 0.3s ease;
+    transform-origin: left;
+    transform: scaleX(0);
+}
+
+#logo {
+    z-index: 7;
+    position: fixed;
+    top: 17.5px;
+    left: 20px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: rgba(31, 174, 218, 0.6);
+}
+
+#logoImg {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    transition: transform 0.5s ease;
+}
+
+/* 讓logo img轉圈 */
+.rotated {
+    transform: rotate(360deg);
+}
+
+header > a {
+    position: relative;
+    color: #007bff;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+header > a:hover {
+    text-decoration: underline;
+}
+
+/* 語言欄 */
+.lang {
+    margin-right: 10px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    z-index: 7;
+}
+
+.lang > img {
+    width: 16px;
+    height: px;
+    border-radius: 1px;
+}
