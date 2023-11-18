@@ -1,14 +1,15 @@
 package ink.wanderer.blog.controller;
 
 import jakarta.servlet.http.HttpServletRequest;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-@RestController
+@Controller
 public class HomeController {
-    @GetMapping
-    public String home(@RequestParam HttpServletRequest request, @RequestParam Integer page) {
+    @GetMapping("/home")
+    public String home() {
         return "hello, world";
     }
 }
