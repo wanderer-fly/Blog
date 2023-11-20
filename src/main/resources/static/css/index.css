@@ -23,15 +23,25 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    top: 53%;
+    top: 60%;
     left: 10%;
     transform: translate(-50%, -50%);
     width: 300px;
     margin-top: 10px;
-    height: 60%;
+    height: 75%;
     border: 1px solid rgba(0, 213, 255, 0.904);
     border-radius: 5px;
     background: rgba(255, 255, 255, 0.232);
     backdrop-filter: blur(10px);
-    /* overflow-y: scroll; */
+}
+
+@media (max-width: 1500px) {
+    /* 小熒幕時的樣式調整 */
+    .mainbox, .leftbox {
+        width: 90%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        top: 10%;
+        height: auto;
+    }
 }
