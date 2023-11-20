@@ -27,8 +27,45 @@
         <!-- <script src="../static/js/fps.js"></script> -->
         <!-- <h1>Language: <span th:text="${lang}"></span></h1> -->
         <div class="leftbox">
-            <img src="../static/res/image/Wanderer.jpg" class=".headicon">
+            <img src="../static/res/image/Wanderer.jpg" class="headicon">
             <h2>蹦蹦小圆帽</h2>
+            <ul>
+                <li>
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 273.5 222.3" role="img"
+                         aria-labelledby="amoo0h1ju6fi7kpo518dmflsnh11jshk" class="octicon" width="16" height="16">
+                            <title id="amoo0h1ju6fi7kpo518dmflsnh11jshk">Twitter</title>
+                            <path d="M273.5 26.3a109.77 109.77 0 0 1-32.2 8.8 56.07 56.07 0 0 0 
+                            24.7-31 113.39 113.39 0 0 1-35.7 13.6 56.1 56.1 0 0 0-97 38.4 54 54
+                             0 0 0 1.5 12.8A159.68 159.68 0 0 1 19.1 10.3a56.12 56.12 0 0 0 17.4
+                              74.9 56.06 56.06 0 0 1-25.4-7v.7a56.11 56.11 0 0 0 45 55 55.65 55.65
+                               0 0 1-14.8 2 62.39 62.39 0 0 1-10.6-1 56.24 56.24 0 0 0 52.4 39 112.87
+                                112.87 0 0 1-69.7 24 119 119 0 0 1-13.4-.8 158.83 158.83 0 0 0 86 25.2c103.2
+                                 0 159.6-85.5 159.6-159.6 0-2.4-.1-4.9-.2-7.3a114.25 114.25 0 0 0 28.1-29.1" fill="currentColor">
+                                </path>
+                            </svg>
+                            <a href="https://twitter.com/z3k5x">@z3k5x</a>
+                    </span>
+                </li>
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.3 15.4" role="img"
+                     aria-labelledby="a1wawvgekrxrv9hh2zjmw2db81v6cbbu" class="octicon" width="16" height="16">
+                        <title id="a1wawvgekrxrv9hh2zjmw2db81v6cbbu">Facebook</title>
+                        <path d="M14.5 0H.8a.88.88 0 0 0-.8.9v13.6a.88.88 0 0 0 .8.9h7.3v-6h-2V7.1h2V5.4a2.87
+                            2.87 0 0 1 2.5-3.1h.5a10.87 10.87 0 0 1 1.8.1v2.1h-1.3c-1 0-1.1.5-1.1 1.1v1.5h2.3l-.3
+                            2.3h-2v5.9h3.9a.88.88 0 0 0 .9-.8V.8a.86.86 0 0 0-.8-.8z" fill="currentColor">
+                        </path>
+                    </svg>
+                </li>
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 245 240">
+                        <g fill="#7289da">
+                          <path d="M122.5 0C55.035 0 0 55.035 0 122.5S55.035 245 122.5 245 245 189.965 245 122.5 189.965 0 122.5 0zm14.71 171.59c-10.145 1.616-20.705 2.41-31.21 2.41-51.643 0-93.6-41.958-93.6-93.6s41.957-93.6 93.6-93.6c29.192 0 54.933 13.662 71.635 34.97-3.216 9.43-4.92 19.362-4.92 29.63 0 38.755 31.585 70.34 70.34 70.34s70.34-31.585 70.34-70.34-31.586-70.34-70.34-70.34c-31.585 0-57.465 25.88-57.465 57.465 0 25.852 21.008 46.86 46.86 46.86 19.24 0 35.843-13.408 40.23-31.352 4.01.77 8.1 1.17 12.375 1.17 63.558 0 115.06 51.503 115.06 115.06s-51.503 115.06-115.06 115.06a114.56 114.56 0 0 1-59.093-16.078z"/>
+                          <path d="M87.28 81.42c-1.952 0-3.73 1.86-3.73 3.932v79.09c0 1.91 1.86 3.91 3.73 3.91 2.19 0 3.94-2.18 3.94-3.91v-79.09c0-2.07-1.75-3.93-3.94-3.93zM130.84 81.42c-1.952 0-3.73 1.86-3.73 3.932v79.09c0 1.91 1.86 3.91 3.73 3.91 2.19 0 3.94-2.18 3.94-3.91v-79.09c0-2.07-1.75-3.93-3.94-3.93z"/>
+                        </g>
+                      </svg>                      
+                </li>
+            </ul>
         </div>
         <div class="mainbox">
             <h3>Language: <span th:text="${lang}"></span></h3>
@@ -40,6 +77,11 @@
             <p>111111</p>
         </div>
         <div class="rightarea">
+            <div class="musicplayer">
+                <audio controls>
+                    <source th:src="@{../static/res/music/music.mp3}" type="audio/mpeg">
+                </audio>
+            </div>
             <div class="twittercircle">
                 <img src="../static/res/image/TwitterCircle.jpg">
             </div>
