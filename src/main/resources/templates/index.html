@@ -4,6 +4,7 @@
         <link rel="stylesheet" href="/static/css/default.css">
         <link rel="stylesheet" href="/static/css/index.css">
         <link rel="stylesheet" href="/static/css/header.css">
+        <script src="../static/js/check.js"></script>
         <title>小圆帽の墓誌銘</title>
     </head>
     <body>
@@ -11,6 +12,7 @@
             <img id="logoImg" src="/static/res/image/Wanderer.jpg" alt="蹦蹦小圓帽">
         </div>
         <header id="header">
+            <h2>小圆帽の墓誌銘</h2>
             <a href="#" th:text="${HOME}"></a>
             <a href="#" th:text="Archive"></a>
              
@@ -24,7 +26,10 @@
             </div>
             <script src="/static/js/header.js"></script>
         </header>
+        <div id="fpsDisplay">FPS: <span id="fpsCounter">0</span></div>
+        <script src="../static/js/fps.js"></script>
         <!-- <h1>Language: <span th:text="${lang}"></span></h1> -->
+        <div class="leftbox"></div>
         <div class="mainbox">
             <h3>Language: <span th:text="${lang}"></span></h3>
             <h1>TEST</h1><h1>TEST</h1><h1>TEST</h1><h1>TEST</h1><h1>TEST</h1><h1>TEST</h1>

@@ -17,15 +17,15 @@ body {
     width: 10px; /* 寬度 */
   }
   
-  ::-webkit-scrollbar-track {
-    /* background-color: #f1f1f1; 軌道背景顏色 */
-  }
+::-webkit-scrollbar-track {
+    /* background-color: #f1f1f1; 軌道背景顏色 廢棄 */
+}
   
-  ::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
     background-color: rgba(120, 212, 255, 0.3); /* 滑塊顏色 */
     border-radius: 5px;
-  }
+}
   
-  ::-webkit-scrollbar-thumb:hover {
+::-webkit-scrollbar-thumb:hover {
     background-color: rgba(120, 212, 255, 1.0); /* 懸停顏色 */
-  }
+}

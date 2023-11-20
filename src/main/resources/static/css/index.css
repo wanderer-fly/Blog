@@ -4,8 +4,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    right: 40px;
-    width: 80%;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
     margin-top: 10px;
     height: 90%;
     border: 1px solid rgba(0, 213, 255, 0.904);
@@ -13,4 +15,23 @@
     background: rgba(255, 255, 255, 0.232);
     backdrop-filter: blur(10px);
     overflow-y: scroll;
+}
+
+.leftbox {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 53%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    margin-top: 10px;
+    height: 60%;
+    border: 1px solid rgba(0, 213, 255, 0.904);
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.232);
+    backdrop-filter: blur(10px);
+    /* overflow-y: scroll; */
 }
