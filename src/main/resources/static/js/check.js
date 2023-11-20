@@ -10,8 +10,26 @@ function checkSize() {
     var currentHeight = window.innerHeight || document.documentElement.clientHeight
 
     if (currentWidth < minWidth || currentHeight < minHeight) {
-      // 页面宽度小于最小宽度，采取相应的措施
-      // 这里可以重定向、显示警告、禁用功能等
-      document.body.innerHTML = '<h1>访问被禁止，因为页面高度或宽度太小。</h1>';
+      document.body.innerHTML = `
+        <div style="
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 90%;
+            height: auto;
+            border 2px soild rgba(255,255,255);
+            background: rgba(255,255,255,0.6);
+            backdrop-filter: blur(10px);
+            padding 20px 20px 20px 20px;
+            color: rgba(255,255,255);
+        ">
+            <h1>访问被禁止，因为页面高度或宽度太小。</h1>
+        </div>
+      `
     }
 }
