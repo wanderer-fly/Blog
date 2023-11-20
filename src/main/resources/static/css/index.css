@@ -35,13 +35,69 @@
     backdrop-filter: blur(10px);
 }
 
-@media (max-width: 1500px) {
-    /* 小熒幕時的樣式調整 */
-    .mainbox, .leftbox {
+.leftbox > img {
+    position: absolute;
+    top: -75px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.rightarea {
+    position: fixed;
+    right: 20px;
+    left: calc(60% + 400px); /* 與左邊的距離是 .mainbox 的 left + mainbox 的 width + 20px */
+    height: 90%;
+    width: auto;
+    margin-top: 10px;
+    border: 1px solid red;
+}
+
+/* @media (max-width: 1500px) {
+    .mainbox, .leftbox, .rightarea {
         width: 90%;
         left: 50%;
         transform: translate(-50%, 0);
         top: 10%;
         height: auto;
+    }
+} */
+
+@media (max-width: 1520px) {
+    .rightarea {
+        display: none;
+    }
+
+    .mainbox {
+        width: 90%;
+        left: 60%;
+        transform: translate(-50%, 0);
+        top: 10%;
+        height: 87%;
+    }
+
+    .mainbox {
+        /* right: 20px; */
+        width: 60%;
+    }
+
+    .leftbox {
+        /* margin-left: 20px; */
+        left: 15%;
+        width: 300px;
+    }
+}
+
+@media (max-width: 1010px) {
+    .leftbox {
+        display: none; /* 隱藏左側元素 */
+    }
+
+    .mainbox {
+        width: 90%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        top: 10%;
+        height: 87%;
     }
 }
