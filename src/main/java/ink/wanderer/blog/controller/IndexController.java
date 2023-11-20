@@ -13,7 +13,6 @@ public class IndexController {
     @GetMapping("/")
     public String index(@RequestParam(name = "lang", required = false, defaultValue = "zh_TW") String lang, Model model) {
         model.addAttribute("lang", lang);
-        model.addAttribute("HOME", "主頁");
         return "index.html";
     }
 }
