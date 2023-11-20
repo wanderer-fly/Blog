@@ -2,7 +2,7 @@ header {
     /* display: flex;
     flex-direction: row;
     justify-content: flex-start; */
-    background-color: rgba(74, 74, 74, 0.608);
+    background-color: rgba(209, 209, 209, 0.608);
     backdrop-filter: blur(10px);
     color: rgb(255, 255, 255);
     border-radius: 30px;
@@ -49,6 +49,33 @@ header > a {
 
 header > a:hover {
     text-decoration: underline;
+}
+
+/*搜索欄*/
+.searchBar {
+    margin-right: 100px;
+    position: absolute;
+    top: 5px;
+    right: 80px;
+    z-index: 7;
+}
+
+#search {
+    height: 25px;
+    width: 300px;
+    border-style: none;
+    border: 1px solid rgba(31, 174, 218, 0.6);
+    border-radius: 5px;
+    font-size: medium;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: rgba(1, 39, 50, 0.866);
+    background: rgba(125, 125, 125, 0.1);
+}
+
+#search:focus {
+    outline: none;
+    border: 2px solid rgba(31, 174, 218, 0.8);
 }
 
 /* 語言欄 */
