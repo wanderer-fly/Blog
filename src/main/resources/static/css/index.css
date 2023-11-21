@@ -17,6 +17,7 @@
     overflow-y: scroll;
     padding: 20px 20px 20px 20px;
     box-sizing: border-box;
+    z-index: 4;
 }
 
 .leftbox {
@@ -38,6 +39,7 @@
     padding: 100px 20px 20px 20px;
     color: rgb(205, 205, 205);
     box-sizing: border-box;
+    z-index: 4;
 }
 
 .headicon {
@@ -67,6 +69,7 @@
     margin-top: 10px;
     border: 1px solid rgba(255, 0, 0, 0.042);
     overflow-y: scroll;
+    z-index: 5;
 }
 
 /* @media (max-width: 1500px) {
