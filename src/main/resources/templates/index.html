@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="/static/css/header.css">
         <link rel="stylesheet" href="/static/css/audio.css">
         <link rel="stylesheet" href="/static/css/searchbox.css">
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
         <script src="../static/js/check.js"></script>
         <title>小圆帽の墓誌銘</title>
     </head>
@@ -87,20 +88,18 @@
                     </svg>
                 </li>
             </ul>
+            <span>測試</span>
+            <a href="/markdown/load?p=test" id="loadMarkdownLink">測試連結</a>
         </div>
-        <div class="mainbox">
-            <h3>Language: <span th:text="${lang}"></span></h3>
-            <h1>TEST</h1><h1>TEST</h1><h1>TEST</h1><h1>TEST</h1><h1>TEST</h1><h1>TEST</h1>
-            <h1>TEST</h1><h1>TEST</h1><h1>TEST</h1><h1>TEST</h1><h1>TEST</h1><h1>TEST</h1>
-            <h1>TEST</h1><h1>TEST</h1><h1>TEST</h1><h1>TEST</h1><h1>TEST</h1><h1>TEST</h1>
-            <h1>TEST</h1><h1>TEST</h1><h1>TEST</h1><h1>TEST</h1><h1>TEST</h1><h1>TEST</h1>
-            <h1>TEST</h1><h1>TEST</h1><h1>TEST</h1><h1>TEST</h1><h1>TEST</h1><h1>TEST</h1>
-            <p>111111</p>
+        <div class="mainbox" id="mainbox">
+            <!-- <h3>Language: <span th:text="${lang}"></span></h3> -->
+            <span id="mdcont" th:fragment="mdcont"  th:utext="${markdownHtml}"></span>
         </div>
+        <script src="/static/js/index/markdown.js"></script>
         <div class="rightarea">
             <div class="musicplayer">
                 <audio controls>
-                    <source th:src="@{../static/res/music/music.mp3}" type="audio/mpeg">
+                    <source th:src="@{/static/res/music/music.mp3}" type="audio/mpeg">
                 </audio>
                 <!-- <a href="#" th:data-audio="${audioFile}" onclick="loadAudio(this)">Play</a> -->
                 <script src="/static/js/index/ajax_music.js"></script>

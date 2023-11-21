@@ -2,7 +2,7 @@
     position: fixed;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     top: 53%;
     left: 50%;
