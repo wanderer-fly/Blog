@@ -13,6 +13,8 @@ import java.nio.file.Paths;
 @Service
 public class MarkdownService {
 
+    public MarkdownService() {}
+
     // 讀取本地Markdown，可能將被棄用
     private static final String MARKDOWN_DIRECTORY = "./markdown/"; // 這個參數也是和它有關的
 

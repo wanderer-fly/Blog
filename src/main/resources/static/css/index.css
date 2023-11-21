@@ -56,6 +56,43 @@
     border-radius: 50%;
 }
 
+.leftbox > ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.leftbox > ul > li {
+    margin-bottom: 10px;
+}
+
+.leftbox > ul > li > span > a {
+    position: relative;
+    text-decoration: none;
+    color: rgb(0, 234, 255);
+    margin-left: 10px;
+}
+
+.leftbox > ul > li > span > a:after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+    background-color: #00ffe1;
+}
+
+.leftbox > ul > li > span > a:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+li > span > img {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
 .rightarea {
     display: flex;
     flex-direction: column;
@@ -72,16 +109,6 @@
     z-index: 5;
 }
 
-/* @media (max-width: 1500px) {
-    .mainbox, .leftbox, .rightarea {
-        width: 90%;
-        left: 50%;
-        transform: translate(-50%, 0);
-        top: 10%;
-        height: auto;
-    }
-} */
-
 @media (max-width: 1520px) {
     .rightarea {
         display: none;
@@ -96,12 +123,10 @@
     }
 
     .mainbox {
-        /* right: 20px; */
         width: 60%;
     }
 
     .leftbox {
-        /* margin-left: 20px; */
         left: 15%;
         width: 300px;
     }
@@ -109,7 +134,7 @@
 
 @media (max-width: 1010px) {
     .leftbox {
-        display: none; /* 隱藏左側元素 */
+        display: none;
     }
 
     .mainbox {

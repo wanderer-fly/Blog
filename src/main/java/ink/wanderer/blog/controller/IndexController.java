@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class IndexController {
 
     @GetMapping("/")
-    public String index(@RequestParam(name = "lang", required = false, defaultValue = "zh_TW") String lang, Model model) {
+    public String index(@RequestParam(name = "lang", required = false, defaultValue = "en_US") String lang, Model model) {
         model.addAttribute("lang", lang);
         return "index.html";
     }
