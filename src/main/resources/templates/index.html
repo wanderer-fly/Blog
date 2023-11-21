@@ -4,6 +4,7 @@
         <link rel="stylesheet" href="/static/css/default.css">
         <link rel="stylesheet" href="/static/css/index.css">
         <link rel="stylesheet" href="/static/css/header.css">
+        <link rel="stylesheet" href="/static/css/audio.css">
         <script src="../static/js/check.js"></script>
         <title>小圆帽の墓誌銘</title>
     </head>
@@ -58,12 +59,7 @@
                     </svg>
                 </li>
                 <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 245 240">
-                        <g fill="#7289da">
-                          <path d="M122.5 0C55.035 0 0 55.035 0 122.5S55.035 245 122.5 245 245 189.965 245 122.5 189.965 0 122.5 0zm14.71 171.59c-10.145 1.616-20.705 2.41-31.21 2.41-51.643 0-93.6-41.958-93.6-93.6s41.957-93.6 93.6-93.6c29.192 0 54.933 13.662 71.635 34.97-3.216 9.43-4.92 19.362-4.92 29.63 0 38.755 31.585 70.34 70.34 70.34s70.34-31.585 70.34-70.34-31.586-70.34-70.34-70.34c-31.585 0-57.465 25.88-57.465 57.465 0 25.852 21.008 46.86 46.86 46.86 19.24 0 35.843-13.408 40.23-31.352 4.01.77 8.1 1.17 12.375 1.17 63.558 0 115.06 51.503 115.06 115.06s-51.503 115.06-115.06 115.06a114.56 114.56 0 0 1-59.093-16.078z"/>
-                          <path d="M87.28 81.42c-1.952 0-3.73 1.86-3.73 3.932v79.09c0 1.91 1.86 3.91 3.73 3.91 2.19 0 3.94-2.18 3.94-3.91v-79.09c0-2.07-1.75-3.93-3.94-3.93zM130.84 81.42c-1.952 0-3.73 1.86-3.73 3.932v79.09c0 1.91 1.86 3.91 3.73 3.91 2.19 0 3.94-2.18 3.94-3.91v-79.09c0-2.07-1.75-3.93-3.94-3.93z"/>
-                        </g>
-                      </svg>                      
+                                       
                 </li>
             </ul>
         </div>
@@ -81,9 +77,11 @@
                 <audio controls>
                     <source th:src="@{../static/res/music/music.mp3}" type="audio/mpeg">
                 </audio>
+                <!-- <a href="#" th:data-audio="${audioFile}" onclick="loadAudio(this)">Play</a> -->
+                <script src="/static/js/index/ajax_music.js"></script>
             </div>
             <div class="twittercircle">
-                <img src="../static/res/image/TwitterCircle.jpg">
+                <img src="/static/res/image/TwitterCircle.jpg">
             </div>
         </div>
     </body>
