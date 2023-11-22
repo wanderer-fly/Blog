@@ -1,3 +1,7 @@
+/* * {
+    cursor: url("/static/res/cursor/1.png"), auto;
+} */
+
 html {
     /* filter: grayscale(100%);  */ /*網頁黑白備用*/
 }
@@ -8,6 +12,7 @@ body {
     background: url(../res/image/background.jpg) no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    cursor: url("/static/res/cursor/1.png"), auto;
     /* overflow-y: scroll; */
 }
 
@@ -18,7 +23,7 @@ body {
   }
   
 ::-webkit-scrollbar-track {
-    /* background-color: #f1f1f1; 軌道背景顏色 廢棄 */
+    background-color: none;
 }
   
 ::-webkit-scrollbar-thumb {

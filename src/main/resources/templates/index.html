@@ -63,9 +63,9 @@
             <span>測試</span>
             <a href="/markdown/load?p=test" id="loadMarkdownLink">測試連結</a>
         </div>
-        <div class="mainbox" id="mainbox">
+        <div class="mainbox" id="mainbox" >
             <!-- <h3>Language: <span th:text="${lang}"></span></h3> -->
-            <span id="mdcont" th:fragment="mdcont"  th:utext="${markdownHtml}"></span>
+            <span id="mdcont" th:utext="${markdownHtml}"></span>
         </div>
         <script src="/static/js/index/markdown.js"></script>
         <div class="rightarea">
@@ -78,6 +78,9 @@
             </div>
             <div class="twittercircle">
                 <img src="/static/res/image/TwitterCircle.jpg">
+            </div>
+            <div class="comments" id="comments">
+                <h2>評論</h2>
             </div>
         </div>
 

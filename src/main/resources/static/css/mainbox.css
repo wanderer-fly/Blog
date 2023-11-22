@@ -1,8 +1,32 @@
 .mainbox > span {
     width: 100%;
+    color: rgb(75, 75, 75);
 }
 
-pre {
+.mainbox > span > span {
+    width: 100%;
+}
+
+.mainbox > span > span > h1,
+.mainbox > span > span > h2,
+.mainbox > span > span > h3,
+.mainbox > span > span > h4,
+.mainbox > span > span > h5,
+.mainbox > span > span > h6 {
+    width: fit-content;
+    border-bottom: 1px solid rgba(205,205,205,0.6);
+}
+
+.mainbox > span > span > ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.mainbox > span > span > ul > li {
+    margin-bottom: 10px;
+}
+
+.mainbox > span > span > pre {
     width: 100%;
     height: min-content;
     border-radius: 7px;
@@ -22,7 +46,7 @@ pre {
     /* text-align: center; */
 }
 
-pre > code {
+.mainbox > span > span > pre > code {
     /* position: relative; */
     /* margin-left: -50px; */
     width: 100%;
@@ -36,7 +60,7 @@ pre > code {
     counter-increment: line;
 }
 
-pre > code:before {
+.mainbox > span > span > pre > code:before {
     /* content: counter(line);
     font-family: "SimHei", "黑体", sans-serif;
     display: inline-block;
@@ -46,4 +70,8 @@ pre > code:before {
     padding-right: 0.5em;
     margin-right: 0.5em;
     color: rgba(153, 153, 153, 1); */
+}
+
+.mainbox > span > span > img {
+    max-width: fit-content;
 }

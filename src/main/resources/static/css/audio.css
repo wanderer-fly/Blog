@@ -4,10 +4,10 @@
 
 audio {
     /* height: 100px; */
-    width: 300px; /* 設置音樂播放器的寬度 */
-    outline: none;
-    border: 1px solid rgba(101, 250, 255, 0.783);
-    border-radius: 5px;
+    width: 100%;
+    /* outline: none; */
+    /* border: 1px solid rgba(101, 250, 255, 0.783); */
+    /* border-radius: 5px; */
 }
 
 /* audio::-webkit-media-controls-panel {
@@ -17,18 +17,18 @@ audio {
 audio::-webkit-media-controls-play-button,
 audio::-webkit-media-controls-pause-button {
     /* background-color: none; */
-    border-radius: 50%;
+    /* border-radius: 50%; */
 }
 
 audio::-webkit-media-controls {
-    background: rgba(227, 249, 253, 0.515);
+    /* background: rgba(227, 249, 253, 0.515); */
     /* background: none; */
-    backdrop-filter: blur(10px);
+    /* backdrop-filter: blur(10px); */
 }
 
 audio::-webkit-media-controls-enclosure {
     background: none;
-    border-radius: 1px;
+    /* border-radius: 1px; */
 }
 
 /* audio::-webkit-media-controls-play-button {
