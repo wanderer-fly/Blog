@@ -1,0 +1,56 @@
+#dock {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    /* left: -200px; */
+    right: 20px; /*临时设置*/
+    width: 55px;
+    height: 400px;
+    background-color: #c4c4c495;
+    transition: left 0.3s ease;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    z-index: 7;
+    transform: translateY(-50%);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 5px 5px 5px 5px;
+    box-sizing: border-box;
+}
+
+#dock > button {
+    width: 48px;
+    height: 48px;
+    border-radius: 15px;
+    border: none;
+    background: rgba(135, 135, 135, 0.5);
+}
+
+#dock > button:hover {
+    background: rgba(75, 181, 252, 0.918);
+    box-shadow: 0 0 5px 5px rgba(75, 181, 252, 0.5);
+}
+
+#settings {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    height: 70%;
+    background: rgba(255, 255, 255, 0.738);
+    backdrop-filter: blur(10px);
+    z-index: 7;
+    box-sizing: border-box;
+    padding: 5px 20px 5px 30px;
+    border-radius: 15px;
+}
+
+#sub-setting {
+    width: 80%;
+    height: 90%;
+    border-radius: 15px;
+    border: 1px solid rgba(165, 165, 165, 0.5);
+}
