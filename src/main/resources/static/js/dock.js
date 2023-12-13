@@ -9,7 +9,7 @@ const dock = document.getElementById('dock');
             const mouseX = e.clientX;
             const screenWidth = window.innerWidth;
 
-            if (mouseX >= screenWidth - 50) {
+            if (mouseX >= screenWidth - 80) {
                 dock.style.right = '20px';
             } else {
                 dock.style.right = '-80px';

@@ -18,7 +18,7 @@
     background: rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(172, 172, 172, 0.556);
     /* border-style: none; */
-    border-radius: 999px;
+    border-radius: 50px;
     backdrop-filter: blur(500px);
     -webkit-backdrop-filter: blur(10px); /* Webkit like Safari etc. */
     padding: 0 20px 0 20px;
@@ -31,5 +31,5 @@
     outline: none;
     border: 3px solid rgba(35, 168, 221, 0.599);
     border-radius: 15px;
-    /* transition: 0.3s; */
+    /* transition: 0.1s; */
 }

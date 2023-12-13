@@ -4,7 +4,6 @@ function calculateFPS() {
     lastFrameTime = now;
     const fps = 1000 / elapsed;
     fpsCounter.textContent = fps.toFixed(2);
-
     requestAnimationFrame(calculateFPS);
 }
 

@@ -9,7 +9,6 @@ document.addEventListener('keydown', function(event) {
         if (shiftPressTimes % 2 == 0) {
             showSearchBox()
             bgcover.style.background = 'rgba(0, 0, 0, 0.574)'
-            console.log(bgcover.style)
         }
     }
 })

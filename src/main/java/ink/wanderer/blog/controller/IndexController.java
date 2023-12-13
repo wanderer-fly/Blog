@@ -22,6 +22,8 @@ public class IndexController {
     @GetMapping("/")
     public String index(@RequestParam(name = "lang", required = false, defaultValue = "en_US") String lang, Model model) {
 
+        lang = (lang.equals("en_US") ? "English" : "正體中文"); // Debug
+
         String updateTime = gitProperties.getCommitTime().toString();
         String version = "git-" + gitProperties.getShortCommitId();
 
