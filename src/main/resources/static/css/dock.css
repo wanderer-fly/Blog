@@ -1,6 +1,6 @@
 #dock {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: flex-start;
     align-items: center;
     position: fixed;
@@ -21,11 +21,14 @@
 }
 
 #dock > button {
+    margin-top: 5px;
     width: 48px;
     height: 48px;
     border-radius: 15px;
     border: none;
     background: rgba(135, 135, 135, 0.5);
+    transition: background 0.3s;
+    transform: scale(1);
 }
 
 #dock > button:hover {
@@ -33,13 +36,28 @@
     box-shadow: 0 0 5px 5px rgba(75, 181, 252, 0.5);
 }
 
+#dock > button:active {
+    transform: scale(0.87);
+    transition: transform 0.3s;
+}
+
+#dock > img {
+    width: 48px;
+}
+
+#dock > hr {
+    border: 1px solid rgba(144, 144, 144, 0.575);
+    width: 80%;
+}
+
 #settings {
+    display: none;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 60%;
-    height: 70%;
+    width: 70%;
+    height: 80%;
     background: rgba(255, 255, 255, 0.738);
     backdrop-filter: blur(10px);
     z-index: 7;
@@ -49,8 +67,11 @@
 }
 
 #sub-setting {
-    width: 80%;
-    height: 90%;
+    margin-top: 10px;
+    width: 100%;
+    height: calc(80% - 35px);
     border-radius: 15px;
     border: 1px solid rgba(165, 165, 165, 0.5);
+    box-sizing: border-box;
+    padding: 10px 10px 10px 10px;
 }

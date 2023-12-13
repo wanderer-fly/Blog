@@ -2,6 +2,7 @@ header {
     /* display: flex;
     flex-direction: row;
     justify-content: flex-start; */
+    position:relative;
     background-color: rgba(209, 209, 209, 0.608);
     backdrop-filter: blur(10px);
     color: rgb(255, 255, 255);
@@ -15,6 +16,7 @@ header {
     transition: all 0.3s ease;
     transform-origin: left;
     transform: scaleX(0);
+    z-index: 5;
 }
 
 header > h2 {

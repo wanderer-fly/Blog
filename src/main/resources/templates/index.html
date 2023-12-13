@@ -13,6 +13,9 @@
         <title>小圆帽の墓誌銘</title>
     </head>
     <body>
+        <div class="background" id="background">
+            <div class="bg-cover"></div>
+        </div>
         <div id="logo">
             <img id="logoImg" src="/static/res/image/Wanderer.jpg" alt="蹦蹦小圓帽">
         </div>
@@ -93,15 +96,27 @@
 
         <!-- 网页侧面功能 -->
         <div id="dock">
-            <button>T</button>
+            <!-- 設定 -->
+            <button id="settings-btn">
+                <img src="/static/res/image/icons/dock/settings.svg" alt="Settings">
+            </button>
+            <!-- 深色模式 -->
+            <button id="darkmode-btn">
+                <img src="/static/res/image/icons/dock/darkmode.svg" alt="Dark Mode">
+            </button>
+            <hr style="color: rgb(0, 0, 0)">
+            <button id="darkmode">
+                <img src="/static/res/image/icons/dock/homepage.svg" alt="Dark Mode">
+            </button>
         </div>
         <!-- 设置 -->
         <div id="settings">
-            <h1>设置</h1>
-            <span>测试</span>
+            <h1>設定</h1>
+            <span>測試</span>
             <div id="sub-setting">
                 1
             </div>
         </div>
+        <script src="/static/js/dock.js"></script>
     </body>
 </html>

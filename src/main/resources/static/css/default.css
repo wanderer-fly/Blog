@@ -9,11 +9,49 @@ html {
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    cursor: url("/static/res/cursor/1.png"), auto;
+    overflow-y: hidden;
+}
+
+/* 深色模式相關代碼，完全是一坨屎 */
+
+html.dark-mode {
+    filter: invert(1) hue-rotate(180deg);
+    img, iframe, .background,
+    .el-tag--primary, .el-tag--success, .el-tag--warning, .el-tag--error,
+    .el-button--primary, .el-button--primary,
+    .invert-restore{
+        filter: invert(1) hue-rotate(180deg);
+    }
+    .invert-restore{
+        img{
+            filter: none;
+        }
+
+        #dock {
+            box-shadow: 2px 0 5px rgba(44, 44, 44, 0.5);
+        }
+        
+    }
+
+    .bg-cover {
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.574);
+    }
+
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
     background: url(../res/image/background.jpg) no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    cursor: url("/static/res/cursor/1.png"), auto;
-    /* overflow-y: scroll; */
+    z-index: 1;
 }
 
 /* 滾動條 */
