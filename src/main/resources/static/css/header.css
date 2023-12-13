@@ -3,9 +3,11 @@ header {
     flex-direction: row;
     justify-content: flex-start; */
     position:relative;
-    background-color: rgba(209, 209, 209, 0.608);
+    background-color: rgba(255, 255, 255, 0.652);
+    border: 1px solid rgba(92, 92, 92, 0.2);
     backdrop-filter: blur(10px);
-    color: rgb(255, 255, 255);
+    -webkit-backdrop-filter: blur(10px); /* Webkit like Safari etc. */
+    color: rgb(92, 92, 92);
     border-radius: 30px;
     height: 40px;
     padding: 0px 0px 0px 60px;
@@ -33,14 +35,19 @@ header > h2 {
     height: 45px;
     border-radius: 50%;
     cursor: pointer;
-    background: rgba(31, 174, 218, 0.6);
 }
 
 #logoImg {
     width: 45px;
     height: 45px;
     border-radius: 50%;
-    transition: transform 0.5s ease;
+    transition: transform 0.5s ease, width 0.5s ease, height 0.5s ease, border-radius 0.5s ease;
+}
+
+#logoImg:hover {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
 }
 
 /* 讓logo img轉圈 */

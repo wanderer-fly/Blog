@@ -6,15 +6,16 @@
     position: fixed;
     top: 50%;
     /* left: -200px; */
-    right: 20px; /*临时设置*/
+    /* right: 20px; */
     width: 55px;
     height: 400px;
     background-color: #c4c4c495;
-    transition: left 0.3s ease;
+    transition: right 0.3s ease-in-out;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
     z-index: 7;
     transform: translateY(-50%);
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* Webkit like Safari etc. */
     border-radius: 15px;
     padding: 5px 5px 5px 5px;
     box-sizing: border-box;
@@ -41,8 +42,8 @@
     transition: transform 0.3s;
 }
 
-#dock > img {
-    width: 48px;
+#dock > button > img {
+    width: 25px;
 }
 
 #dock > hr {
@@ -60,6 +61,7 @@
     height: 80%;
     background: rgba(255, 255, 255, 0.738);
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* Webkit like Safari etc. */
     z-index: 7;
     box-sizing: border-box;
     padding: 5px 20px 5px 30px;

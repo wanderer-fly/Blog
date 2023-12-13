@@ -12,8 +12,9 @@
     height: 90%;
     border: 1px solid rgba(0, 213, 255, 0.904);
     border-radius: 5px;
-    background: rgba(255, 255, 255, 0.232);
+    background: rgba(255, 255, 255, 0.652);
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* Webkit like Safari etc. */
     overflow-y: scroll;
     padding: 20px 20px 20px 20px;
     box-sizing: border-box;
@@ -34,10 +35,11 @@
     height: 75%;
     border: 1px solid rgba(0, 213, 255, 0.904);
     border-radius: 5px;
-    background: rgba(255, 255, 255, 0.232);
+    background: rgba(255, 255, 255, 0.652);
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* Webkit like Safari etc. */
     padding: 100px 20px 20px 20px;
-    color: rgb(205, 205, 205);
+    color: rgb(74, 74, 74);
     box-sizing: border-box;
     z-index: 4;
 }
@@ -104,7 +106,7 @@ li > span > img {
     height: 90%;
     width: auto;
     margin-top: 10px;
-    border: 1px solid rgba(255, 0, 0, 0.042);
+    /* border: 1px solid rgba(255, 0, 0, 0.042); */
     overflow-y: scroll;
     z-index: 5;
 }
@@ -112,8 +114,9 @@ li > span > img {
 .rightarea > div {
     width: 95%;
     margin-top: 20px;
-    background: rgba(255, 255, 255, 0.232);
+    background: rgba(255, 255, 255, 0.652);
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* Webkit like Safari etc. */
     border: 1px solid rgba(49, 255, 241, 0.726);
     border-radius: 5px;
 }
@@ -155,6 +158,21 @@ li > span > img {
     }
 }
 
+/* Debug Box */
+
+.debugbox {
+    width: 95%;
+    height: fit-content;
+    background: rgba(255, 255, 255, 0.232);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* Webkit like Safari etc. */
+    border: 1px solid rgba(49, 255, 241, 0.726);
+    border-radius: 5px;
+    padding: 5px 5px 5px 5px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
 /* Twitter Circle */
 
 .twittercircle {
@@ -162,6 +180,7 @@ li > span > img {
     width: 95%;
     background: rgba(255, 255, 255, 0.232);
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* Webkit like Safari etc. */
     border: 1px solid rgba(49, 255, 241, 0.726);
     border-radius: 5px;
 }

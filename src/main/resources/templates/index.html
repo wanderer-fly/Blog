@@ -14,7 +14,7 @@
     </head>
     <body>
         <div class="background" id="background">
-            <div class="bg-cover"></div>
+            <div class="bg-cover" id="bg-cover"></div>
         </div>
         <div id="logo">
             <img id="logoImg" src="/static/res/image/Wanderer.jpg" alt="蹦蹦小圓帽">
@@ -31,9 +31,8 @@
             </div>
             <script src="/static/js/header.js"></script>
         </header>
-        <!-- <div id="fpsDisplay">FPS: <span id="fpsCounter">0</span></div> -->
-        <!-- <script src="../static/js/fps.js"></script> -->
-        <!-- <h1>Language: <span th:text="${lang}"></span></h1> -->
+
+        <!-- 左側區域 -->
         <div class="leftbox">
             <img src="../static/res/image/Wanderer.jpg" class="headicon">
             <h2>蹦蹦小圆帽</h2>
@@ -67,12 +66,24 @@
             <span>測試</span>
             <a href="/markdown/load?p=test" id="loadMarkdownLink">測試連結</a>
         </div>
+        <!-- 主區域 -->
         <div class="mainbox" id="mainbox" >
             <!-- <h3>Language: <span th:text="${lang}"></span></h3> -->
             <span id="mdcont" th:utext="${markdownHtml}"></span>
         </div>
         <script src="/static/js/index/markdown.js"></script>
+        <!-- 右側區域 -->
         <div class="rightarea">
+            <!-- Debug Box -->
+            <div class="debugbox" id="debugbox">
+                <h3>Running on debug mode</h3>
+                <div id="fpsDisplay">FPS: <span id="fpsCounter">0</span></div>
+                <script src="../static/js/fps.js"></script>
+                <p>Language: <span th:text="${lang}">Not yet set</span></p>
+                <p>Version: <span th:text="${version}">Not yet set</span></p>
+                <p>Update Time: <span th:text="${update}">Not yet set</span></p>
+            </div>
+            <!-- Music Player -->
             <div class="musicplayer">
                 <audio controls>
                     <source th:src="@{/static/res/music/music.mp3}" type="audio/mpeg">
@@ -80,6 +91,7 @@
                 <!-- <a href="#" th:data-audio="${audioFile}" onclick="loadAudio(this)">Play</a> -->
                 <script src="/static/js/index/ajax_music.js"></script>
             </div>
+            <!-- Twitter Circle -->
             <div class="twittercircle">
                 <img src="/static/res/image/TwitterCircle.jpg">
             </div>

@@ -16,14 +16,20 @@
     width: 99%;
     height: 50px;
     background: rgba(255, 255, 255, 0.1);
-    border-style: none;
-    border-radius: 10px;
+    border: 1px solid rgba(172, 172, 172, 0.556);
+    /* border-style: none; */
+    border-radius: 999px;
     backdrop-filter: blur(500px);
+    -webkit-backdrop-filter: blur(10px); /* Webkit like Safari etc. */
     padding: 0 20px 0 20px;
     font-size: large;
-    color: aliceblue;
+    color: rgb(81, 81, 81);
+    transition: border-radius 0.1s;
 }
 
 #searchbox > input:focus {
     outline: none;
+    border: 3px solid rgba(35, 168, 221, 0.599);
+    border-radius: 15px;
+    /* transition: 0.3s; */
 }
