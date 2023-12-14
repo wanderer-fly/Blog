@@ -27,6 +27,12 @@ document.getElementById('settings-btn').addEventListener('click', function() {
 
 })
 
+// Close Button
+
+function closeSettings() {
+    document.getElementById('settings').style.display = 'none'
+}
+
 function toggleDarkMode() {
     const body = document.body;
     body.classList.toggle('dark-mode')

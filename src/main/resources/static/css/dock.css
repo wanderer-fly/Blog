@@ -63,10 +63,20 @@
     background: rgba(255, 255, 255, 0.738);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px); /* Webkit like Safari etc. */
-    z-index: 7;
+    z-index: 6;
     box-sizing: border-box;
     padding: 5px 20px 5px 30px;
     border-radius: 15px;
+}
+
+.close-btn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    border-radius: 50%;
+    border: none;
+    font-size: x-large;
+    background: none;
 }
 
 #sub-setting {

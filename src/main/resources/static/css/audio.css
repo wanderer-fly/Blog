@@ -8,6 +8,7 @@ audio {
     /* outline: none; */
     /* border: 1px solid rgba(101, 250, 255, 0.783); */
     /* border-radius: 5px; */
+    
 }
 
 /* audio::-webkit-media-controls-panel {
@@ -18,6 +19,7 @@ audio::-webkit-media-controls-play-button,
 audio::-webkit-media-controls-pause-button {
     /* background-color: none; */
     /* border-radius: 50%; */
+    
 }
 
 audio::-webkit-media-controls {

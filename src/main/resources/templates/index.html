@@ -40,8 +40,9 @@
         <!-- 左側區域 -->
         <div class="leftbox" id="leftbox">
             <img src="../static/res/image/Wanderer.jpg" class="headicon">
-            <h2>蹦蹦小圆帽</h2>
+            <h2 id="nickname"></h2>
             <span>彼陽若至，初升東曦</span>
+            <p>生无可恋版小圆帽<br>English/简体中文/繁體中文<br>日常发疯，无所事事推主<br>不要问我年龄和姓名啦www</p>
             <ul>
                 <li>
                     <span>
@@ -70,6 +71,7 @@
             </ul>
             <span>測試</span>
             <a href="/markdown/load?p=test" id="loadMarkdownLink">測試連結</a>
+            <script src="/static/js/index/left.js"></script>
         </div>
         <!-- 主區域 -->
         <div class="mainbox" id="mainbox1" >
@@ -102,6 +104,11 @@
                 </audio>
                 <!-- <a href="#" th:data-audio="${audioFile}" onclick="loadAudio(this)">Play</a> -->
                 <script src="/static/js/index/ajax_music.js"></script>
+            </div>
+            <!-- Control Panel -->
+            <div class="controlpel">
+                <!-- 音量 -->
+                <input type="range" id="volumeControl" min="0" max="1" step="0.01">
             </div>
             <!-- Twitter Circle -->
             <div class="twittercircle">
@@ -152,6 +159,7 @@
         </div>
         <!-- 设置 -->
         <div id="settings">
+            <button class="close-btn" onclick="closeSettings()">&times;</button>
             <h1>設定</h1>
             <span>頁面設定</span>
             <div id="sub-setting">

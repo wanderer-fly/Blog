@@ -47,6 +47,12 @@
     border-radius: 50%;
 }
 
+.leftbox > p {
+    width: 70%;
+    text-align: center;
+    font-size: small;
+}
+
 .leftbox > span > img {
     width: 50px;
     height: 50px;
@@ -101,19 +107,18 @@ li > span > img {
     height: 90%;
     width: auto;
     margin-top: 10px;
-    /* border: 1px solid rgba(255, 0, 0, 0.042); */
     overflow-y: scroll;
+    border-radius: 5px;
     z-index: 5;
 }
 
 .rightarea > div {
     width: 95%;
     margin-top: 20px;
-    background: rgba(255, 255, 255, 0.652);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px); /* Webkit like Safari etc. */
     border: 1px solid rgba(49, 255, 241, 0.726);
     border-radius: 5px;
+    flex-grow: 0;
+    flex-shrink: 0;
 }
 
 #mainbox2, #mainbox3, #mainbox4, #mainbox5 {
@@ -198,12 +203,20 @@ li > span > img {
     }
 }
 
+/*Music Player*/
+
+.musicplayer {
+    background: rgba(255, 255, 255, 0.551);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* Webkit like Safari etc. */
+}
+
 /* Debug Box */
 
 .debugbox {
     width: 95%;
-    height: fit-content;
-    background: rgba(255, 255, 255, 0.232);
+    height: max-content;
+    background: rgba(255, 255, 255, 0.551);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px); /* Webkit like Safari etc. */
     border: 1px solid rgba(49, 255, 241, 0.726);
@@ -211,6 +224,29 @@ li > span > img {
     padding: 5px 5px 5px 5px;
     box-sizing: border-box;
     overflow: hidden;
+}
+
+/*Control Panel*/
+
+.controlpel {
+    width: 95%;
+    height: 400px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* Webkit like Safari etc. */
+    border: 1px solid rgba(49, 255, 241, 0.726);
+    border-radius: 5px;
+    padding: 5px 5px 5px 5px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.controlpel > input[type="range"] {
+    position: relative;
+    margin-left: -100px;
+    margin-top: 140px;
+    writing-mode: bt-lr;
+    transform: rotate(270deg);
+    width: 250px;
 }
 
 /* Twitter Circle */
@@ -231,6 +267,9 @@ li > span > img {
 }
 
 .comments {
+    background: rgba(255, 255, 255, 0.551);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* Webkit like Safari etc. */
     padding: 15px 15px 15px 15px;
     box-sizing: border-box;
 }
