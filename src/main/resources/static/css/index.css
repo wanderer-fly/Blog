@@ -10,11 +10,6 @@
     width: 60%;
     margin-top: 10px;
     height: 90%;
-    border: 1px solid rgba(0, 213, 255, 0.904);
-    border-radius: 5px;
-    background: rgba(255, 255, 255, 0.652);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px); /* Webkit like Safari etc. */
     overflow-y: scroll;
     padding: 20px 20px 20px 20px;
     box-sizing: border-box;
@@ -119,6 +114,51 @@ li > span > img {
     -webkit-backdrop-filter: blur(10px); /* Webkit like Safari etc. */
     border: 1px solid rgba(49, 255, 241, 0.726);
     border-radius: 5px;
+}
+
+#mainbox1, #mainbox2, #mainbox3, #mainbox4 {
+    display: none;
+    transition: 0.3s;
+}
+
+#mainbox1 {
+    border: 1px solid rgba(0, 213, 255, 0.904);
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.652);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* Webkit like Safari etc. */
+}
+
+#mainbox2 {
+    padding-top: 10%;
+}
+
+#mainbox2 > h1 {
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #8cecf3fe;
+}
+
+#mainbox2 > input {
+    width: 60%;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(172, 172, 172, 0.556);
+    /* border-style: none; */
+    border-radius: 50px;
+    backdrop-filter: blur(500px);
+    -webkit-backdrop-filter: blur(10px); /* Webkit like Safari etc. */
+    padding: 0 20px 0 20px;
+    font-size: large;
+    color: rgb(81, 81, 81);
+    transition: border-radius 0.1s;
+}
+
+#mainbox2 > input:focus {
+    outline: none;
+    border: 3px solid rgba(35, 168, 221, 0.599);
+    border-radius: 15px;
+    /* transition: 0.1s; */
 }
 
 @media (max-width: 1520px) {

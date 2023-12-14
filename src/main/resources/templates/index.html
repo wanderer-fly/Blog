@@ -36,7 +36,7 @@
         </header>
 
         <!-- 左側區域 -->
-        <div class="leftbox">
+        <div class="leftbox" id="leftbox">
             <img src="../static/res/image/Wanderer.jpg" class="headicon">
             <h2>蹦蹦小圆帽</h2>
             <span>彼陽若至，初升東曦</span>
@@ -70,13 +70,20 @@
             <a href="/markdown/load?p=test" id="loadMarkdownLink">測試連結</a>
         </div>
         <!-- 主區域 -->
-        <div class="mainbox" id="mainbox" >
-            <!-- <h3>Language: <span th:text="${lang}"></span></h3> -->
+        <div class="mainbox" id="mainbox1" >
             <span id="mdcont" th:utext="${markdownHtml}"></span>
         </div>
+        <!-- 搜尋 -->
+        <div class="mainbox" id="mainbox2">
+            <h1>搜尋</h1>
+            <input type="text" placeholder="Search">
+        </div>
+        <div class="mainbox" id="mainbox3"><h1>3</h1></div>
+        <div class="mainbox" id="mainbox4"><h1>4</h1></div>
+        <div class="mainbox" id="mainbox5"><h1>5</h1></div>
         <script src="/static/js/index/markdown.js"></script>
         <!-- 右側區域 -->
-        <div class="rightarea">
+        <div class="rightarea" id="rightarea">
             <!-- Debug Box -->
             <div class="debugbox" id="debugbox">
                 <h3>Running on debug mode</h3>
@@ -120,8 +127,25 @@
                 <img src="/static/res/image/icons/dock/darkmode.svg" alt="Dark Mode">
             </button>
             <hr style="color: rgb(0, 0, 0)">
-            <button id="darkmode">
-                <img src="/static/res/image/icons/dock/homepage.svg" alt="Dark Mode">
+            <!-- 頁面切換 -->
+            <button onclick="switchPage('mainbox5')">
+                <img src="/static/res/image/icons/dock/more.svg" alt="Page5">
+            </button>
+
+            <button onclick="switchPage('mainbox4')">
+                <img src="/static/res/image/icons/dock/write.svg" alt="Page4">
+            </button>
+
+            <button onclick="switchPage('mainbox3')">
+                <img src="/static/res/image/icons/dock/page.svg" alt="Page3">
+            </button>
+
+            <button onclick="switchPage('mainbox2')">
+                <img src="/static/res/image/icons/dock/search.svg" alt="Page2">
+            </button>
+
+            <button onclick="switchPage('mainbox1')">
+                <img src="/static/res/image/icons/dock/homepage.svg" alt="Page1">
             </button>
         </div>
         <!-- 设置 -->

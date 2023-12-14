@@ -6,7 +6,7 @@
     position: fixed;
     top: 50%;
     /* left: -200px; */
-    /* right: 20px; */
+    right: -80px;
     width: 55px;
     height: 400px;
     background-color: #c4c4c495;
@@ -17,12 +17,13 @@
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px); /* Webkit like Safari etc. */
     border-radius: 15px;
-    padding: 5px 5px 5px 5px;
+    padding: 0 5px 5px 5px;
     box-sizing: border-box;
 }
 
 #dock > button {
-    margin-top: 5px;
+    margin-top: 2.5px;
+    margin-bottom: 2.5px;
     width: 48px;
     height: 48px;
     border-radius: 15px;
