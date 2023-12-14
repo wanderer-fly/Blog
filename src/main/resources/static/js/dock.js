@@ -3,18 +3,18 @@ const darkmode = document.getElementById('darkmode')
 
 // base
 
-const dock = document.getElementById('dock');
+const dock = document.getElementById('dock')
 
-        document.addEventListener('mousemove', (e) => {
-            const mouseX = e.clientX;
-            const screenWidth = window.innerWidth;
+document.addEventListener('mousemove', (e) => {
+    const mouseX = e.clientX
+    const screenWidth = window.innerWidth
 
-            if (mouseX >= screenWidth - 80) {
-                dock.style.right = '20px';
-            } else {
-                dock.style.right = '-80px';
-            }
-        });
+    if (mouseX >= screenWidth - 80) {
+        dock.style.right = '20px'
+    } else {
+        dock.style.right = '-80px'
+    }
+})
 // settings
 
 document.getElementById('settings-btn').addEventListener('click', function() {
@@ -37,6 +37,22 @@ document.getElementById('darkmode-btn').addEventListener('click', function() {
     html.classList.toggle('dark-mode')
 })
 
+window.addEventListener('resize', function() {
+    var windowWidth = window.innerWidth
+
+    if (windowWidth >= 1010) {
+        document.getElementById('leftbox').style.display = 'flex'
+        
+        if (windowWidth >= 1520) {
+            document.getElementById('rightarea').style.display = 'block'
+        } else {
+            document.getElementById('rightarea').style.display = 'none'
+        }
+    } else {
+        document.getElementById('leftbox').style.display = 'none'
+    }
+})
+
 function switchPage(pageId) {
 
     //Set all none
@@ -53,7 +69,33 @@ function switchPage(pageId) {
         document.getElementById('leftbox').style.display = 'none'
         document.getElementById('rightarea').style.display = 'none'
     } else {
-        document.getElementById('leftbox').style.display = 'flex'
-        document.getElementById('rightarea').style.display = 'block'
+
+        var windowWidth = window.innerWidth
+
+        if (windowWidth >= 1010) {
+            document.getElementById('leftbox').style.display = 'flex'
+            
+            if (windowWidth >= 1520) {
+                document.getElementById('rightarea').style.display = 'block'
+            } else {
+                document.getElementById('rightarea').style.display = 'none'
+            }
+        } else {
+            document.getElementById('leftbox').style.display = 'none'
+        }
     }
 }
+// Setting items
+
+document.getElementById('bg-cover-opacity').addEventListener('input', function() {
+    document.getElementById('background').style.opacity = (1 - document.getElementById('bg-cover-opacity').value / 100)
+})
+
+document.getElementById('bg-cover-blur').addEventListener('input', function() {
+    var blurValue = document.getElementById('bg-cover-blur').value / 10;
+
+    // var beforeElement = document.getElementsByClassName('.background')
+    // console.log(beforeElement)
+
+    document.getElementById('background').style.filter = `blur(${blurValue}px)`;
+});

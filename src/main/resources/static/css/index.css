@@ -116,7 +116,7 @@ li > span > img {
     border-radius: 5px;
 }
 
-#mainbox1, #mainbox2, #mainbox3, #mainbox4 {
+#mainbox2, #mainbox3, #mainbox4, #mainbox5 {
     display: none;
     transition: 0.3s;
 }

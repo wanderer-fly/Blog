@@ -74,7 +74,46 @@
     width: 100%;
     height: calc(80% - 35px);
     border-radius: 15px;
+    background: rgba(220, 220, 220, 0.7);
     border: 1px solid rgba(165, 165, 165, 0.5);
     box-sizing: border-box;
     padding: 10px 10px 10px 10px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+#sub-line {
+    width: 100%;
+}
+
+#sub-setting > ul {
+    /* border-bottom: 1px solid rgba(165, 165, 165, 0.5); */
+}
+
+#sub-setting > ul > li {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgba(165, 165, 165, 0.5)
+}
+
+#sub-setting > ul > li > span {
+    width: 20%;
+    font-size: 14px;
+}
+
+#sub-setting > ul > li > div {
+    display: flex;
+    flex: 1;
+    justify-content: end;
+    align-items: end;
+    box-sizing: border-box;
+    padding-right: 40px;
+}
+
+#sub-setting > ul > li > div > input[type="range"] {
+    width: 200px;
 }
